@@ -1,0 +1,459 @@
+:root{
+  --light: white;
+  --mediumlight:#516539;
+  --mediumdark:#193720;
+  --dark:#131f12;   
+  --title: 'Nothing You Could Do', cursive;
+  --subtitle:'Comfortaa', cursive;
+  --content: 'Quicksand', sans-serif;
+  }
+
+*{
+margin: 0;
+box-sizing:border-box;
+
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: Var(--light) ;
+}
+/*Nav Bar and Header-Title*/
+.container1 {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  ), url("https://w0.peakpx.com/wallpaper/33/987/HD-wallpaper-irish-landscape-ireland-nature-sky-landscape-coast.jpg");     
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+display: flex;
+justify-content: right;
+padding-top: .75em;
+}
+
+nav li {
+list-style: none;
+}
+
+nav a {
+text-decoration: none;
+color: Var(--light) ;
+font-weight: 400;
+font-size: 1em;
+text-shadow: 0 .5px 0 black;
+padding: .75em;
+}
+
+nav a:hover {
+text-decoration: none;
+color: Var(--dark) ;
+font-weight: 500;
+font-size: 1.25em;
+}
+
+.container1 h2{
+color: Var(--light);
+font-size: 1.75em;
+text-shadow: 0 1.5px 0 black;
+padding-top: 0;
+padding-bottom: 20rem;
+padding-left: 3rem;
+padding-right: 3rem;
+margin: 0, auto;
+}
+
+/*General*/
+h1 {
+  font-family:  Var(--title);
+  color: Var(--light) ;
+  font-size: 8em;
+  text-align: center;
+  text-shadow: 0 1.5px 0 black;
+  padding-top: 2em;
+}
+
+
+body h2 {
+  font-family: Var(--title);
+  color: Var(--dark) ;
+  font-size: 3em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+h3 {
+  font-family:Var(--subtitle);
+  color: Var(--mediumlight) ;
+  font-size: 1.5em;
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+p {
+  font-family: Var(--content);
+  color: Var(--dark) ;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+/*Things To Do*/
+
+#things-to-do p{
+color: Var(--light);
+font-size: 16px;
+}
+#things-to-do h3 {
+ color:  #90EE90;
+}
+
+.images {
+margin: auto;
+display: flex;
+flex-flow: row wrap;
+align-content: center;
+justify-content: center;
+row-gap: 30px;
+column-gap: 40px;
+}
+
+.box img{
+  width: 40vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.ttd-caption {
+position: relative;
+padding: 0;
+margin: 0;
+}
+
+.ttd-caption-text {
+opacity: 0;
+position: absolute;
+width: 100%;
+left: 0;
+bottom: 0;
+padding: 0.75em 1em;
+font-weight: 700;
+z-index: 2;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+background-color: rgba(0,0,0,.7);
+-webkit-transition: opacity .3s ease-in-out;
+transition: opacity .3s ease-in-out;
+}
+.ttd-caption:hover .ttd-caption-text {
+opacity: 1;
+}
+
+/*Destinations*/
+#destinations{
+max-width: 1300px;
+margin: auto;
+}
+
+.grid { 
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-gap: 20px;
+align-items: stretch;
+}
+
+.grid > article {
+border: 1px solid #ccc;
+box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.grid > article img {
+max-width: 100%;
+}
+
+.text {
+padding: 0px 20px 20px 20px;
+}
+
+.text > button {
+background: gray;
+border: 0;
+color: white;
+padding: 10px;
+width: 100%;
+}
+
+.text > button:hover {
+  background: rgba(0,0,0,.7);
+}
+.text button a {
+  text-decoration: none;
+  color: Var(--light);
+}
+
+/*Food and Drink*/
+
+#food-and-drink img{
+vertical-align: middle;
+}
+
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+
+.mySlides {
+display: none;
+}
+
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+
+.FDtext {
+color: #f2f2f2;
+font-size: 25px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+font-weight: 500;
+background-color: rgba(0,0,0,.7);
+}
+
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+/*Plan your Trip*/
+.container2 {
+display: flex;
+justify-content: space-evenly;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#plan-your-trip i {
+font-size: 6em;
+color: Var(--mediumlight);
+}
+
+#plan-your-trip a {
+text-decoration: none;
+font-size: 1.5em;
+font-weight: 500;
+padding-top: 10px;
+color: Var(--dark);
+}
+
+.bottom-align{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/*More Info*/
+#more-info {
+background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("https://i.gocollette.com/tour-media-manager/tours/europe/ireland/68/packages/master-package/top-carousel/shadesofireland_hero1_cliffsofmoher_v2.jpg");
+background-size: cover;
+}
+
+#more-info h2{
+background-color: rgba(255, 255, 255, 0.5);
+padding: 0 10px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#more-info label{
+color: Var(--light);
+}
+
+#more-info h3 {
+color:#90EE90;
+}
+
+form {
+text-align: center;
+font-size: 1.2em;
+padding-bottom: 20px;
+}
+
+form .submit{
+  background-color: Var(--mediumlight);
+  color: Var(--light);
+  font-size: 1.2em;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #eee;
+  text-shadow: none;
+}
+
+form .submit:hover{
+background: Var(--dark);
+color: Var(--light);
+}
+
+/*Contact Us*/
+
+footer {
+background-color:  #131f12;
+padding: 30px 10px 30px 10px;
+}
+footer h3 {
+text-align: left;
+}
+
+footer i {
+font-size: 6em;
+color: Var(--mediumlight);
+float: right;
+}
+
+footer li {
+color: #dbd9a9;
+list-style: none;
+}
+footer a {
+text-decoration: none;
+color: #dbd9a9;
+}
+
+/*Responsive Design*/
+
+/*Phone*/
+
+@media screen and (max-width: 420px) {
+h1 {
+  font-size: 6em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#things-to-do p{
+font-size: 12px;
+font-weight: 200;
+}
+#things-to-do h3 {
+ font-size: 13px;
+ font-weight: 300;
+}
+
+.images {
+row-gap: 10px;
+column-gap: 20px;
+}
+
+
+.FDtext {
+font-size: 14px;
+font-weight: 400;
+}
+#plan-your-trip i {
+font-size: 4em;
+}
+
+#plan-your-trip a {
+font-size: 1.1em;
+}
+
+footer {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+footer h3 {
+text-align: center;
+}
+
+footer i {
+font-size: 4.5em; 
+float: none;
+padding-bottom: 10px;
+}
+}
+@media screen and (max-width: 280px){
+h1{
+  font-size: 5em;
+}
+#plan-your-trip i {
+font-size: 3em; 
+}
+
+/*large screens*/
+}
+@media screen and (min-width: 1280px){
+  html{
+    font-size: 20px;
+  }
+  #destinations h3{
+    font-size: 1em;
+  }
+}
+
